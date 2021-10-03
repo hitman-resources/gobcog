@@ -4469,7 +4469,7 @@ class Adventure(commands.Cog):
                     cooldown_time = 20
                     if "catch_cooldown" not in c.heroclass:
                         c.heroclass["catch_cooldown"] = cooldown_time + 1
-                    if c.heroclass["catch_cooldown"] > time.time():
+                    if False:
                         cooldown_time = c.heroclass["catch_cooldown"] - time.time()
                         return await smart_embed(
                             ctx,
@@ -4617,7 +4617,7 @@ class Adventure(commands.Cog):
             cooldown_time = 20
             if "cooldown" not in c.heroclass:
                 c.heroclass["cooldown"] = cooldown_time + 1
-            if c.heroclass["cooldown"] <= time.time():
+            if True:
                 await self._open_chest(ctx, c.heroclass["pet"]["name"], "pet", character=c)
                 c.heroclass["cooldown"] = time.time() + cooldown_time
                 await self.config.user(ctx.author).set(await c.to_json(self.config))
