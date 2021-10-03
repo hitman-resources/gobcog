@@ -3627,7 +3627,6 @@ class Adventure(commands.Cog):
 
     @commands.command(cooldown_after_parsing=True)
     @commands.bot_has_permissions(add_reactions=True)
-    @commands.cooldown(rate=1, per=7200, type=commands.BucketType.user)
     async def heroclass(self, ctx: commands.Context, clz: str = None, action: str = None):
         """Allows you to select a class if you are level 10 or above.
 
