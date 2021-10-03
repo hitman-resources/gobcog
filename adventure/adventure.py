@@ -4684,7 +4684,7 @@ class Adventure(commands.Cog):
                 cooldown_time = 20
                 if "cooldown" not in c.heroclass:
                     c.heroclass["cooldown"] = cooldown_time + 1
-                if c.heroclass["cooldown"] <= time.time():
+                if True:
                     c.heroclass["ability"] = True
                     c.heroclass["cooldown"] = time.time() + cooldown_time
                     await self.config.user(ctx.author).set(await c.to_json(self.config))
@@ -4914,7 +4914,7 @@ class Adventure(commands.Cog):
                 cooldown_time = 20
                 if "cooldown" not in c.heroclass:
                     c.heroclass["cooldown"] = cooldown_time + 1
-                if c.heroclass["cooldown"] <= time.time():
+                if True:
                     c.heroclass["ability"] = True
                     c.heroclass["cooldown"] = time.time() + cooldown_time
                     await self.config.user(ctx.author).set(await c.to_json(self.config))
@@ -4965,7 +4965,7 @@ class Adventure(commands.Cog):
                 cooldown_time = 20
                 if "cooldown" not in c.heroclass:
                     c.heroclass["cooldown"] = cooldown_time + 1
-                if c.heroclass["cooldown"] <= time.time():
+                if True:
                     c.heroclass["ability"] = True
                     c.heroclass["cooldown"] = time.time() + cooldown_time
 
@@ -5016,7 +5016,7 @@ class Adventure(commands.Cog):
                 cooldown_time = 20
                 if "cooldown" not in c.heroclass:
                     c.heroclass["cooldown"] = cooldown_time + 1
-                if c.heroclass["cooldown"] <= time.time():
+                if True:
                     c.heroclass["ability"] = True
                     c.heroclass["cooldown"] = time.time() + cooldown_time
                     await self.config.user(ctx.author).set(await c.to_json(self.config))
