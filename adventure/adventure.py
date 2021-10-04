@@ -7387,7 +7387,7 @@ class Adventure(commands.Cog):
                     crit_str = f"{self.emojis.crit} {crit_bonus}"
 
                 if c.heroclass["name"] == "Bard" and c.heroclass["ability"]:
-                    base_bonus = (random.randint(1, 10) + 5) * (rebirths // 2)
+                    base_bonus = (random.randint(8, 20) + 5) * (rebirths // 2)
                 base_str = f"🎵 {humanize_number(base_bonus)}"
                 diplomacy += int((roll + base_bonus + crit_bonus + dipl_value) / cdef)
                 bonus = base_str + crit_str
